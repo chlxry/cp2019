@@ -3,7 +3,7 @@
 # Hint: Use the % operator to extract digits, and use the // operator to remove the extracted digit
 # For instance, 932 % 10 = 2 and 932 // 10 = 93 
 
-x = int(input("Input a number boiii: "))
+x = int(input("Input a number here boiii: "))
 sum = 0
 while (x > 0):
     dig = x % 10
