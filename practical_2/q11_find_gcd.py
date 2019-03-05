@@ -5,4 +5,5 @@
 
 n1 = input("enter first integer: ")
 n2 = input("enter second integer: ")
-d =
+for i in range
+n1 % d == 0 and n2 % d == 0
