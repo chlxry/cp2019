@@ -9,7 +9,7 @@ def gcd(n1, n2):
     else: 
         return gcd(n2 , n1 % n2) 
   
-n1 = int(input("enter integer here: "))
-n2 = int(input("enter integer here: "))
+n1 = int(input("enter first integer here: "))
+n2 = int(input("enter second integer here: "))
   
 print ("the greatest common divisor of " + str(n1) + " and " + str(n2) + " is " + str(gcd(n1, n2)) + ".") 
