@@ -3,7 +3,13 @@
 # then check whether d, d-1, … d-2, 2, or 1 is a divisor for both n1 and n2 in this order. 
 # The first such common divisor is the greatest common divisor for n1 and n2. Write a program to implement this solution.
 
-n1 = input("enter first integer: ")
-n2 = input("enter second integer: ")
-for i in range
-n1 % d == 0 and n2 % d == 0
+def gcd(a,b): 
+    if(b==0): 
+        return a 
+    else: 
+        return gcd(b,a%b) 
+  
+a = int(input("enter integer here: "))
+b= int(input("enter integer here: "))
+  
+print ("the greatest common divisor of " + str(a) + " and " + str(b) + " is " + str(gcd(a, b))) 
