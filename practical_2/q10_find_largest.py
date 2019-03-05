@@ -1,6 +1,6 @@
 # Use a while loop to find the largest integer n such that n3 is less than 12,000.
 
-n = 10
+n = 1
 
 while n < 12000 ** (1/3):
   if n**3 < 12000:
