@@ -9,3 +9,11 @@
 # 19        16.4023  
 # 20        17.3546  
 
+def m_series(i, end):
+    print("i" + "\t" + "m(i)") # heading
+    sum = 0
+    for i in range(1, 21):       
+        sum = sum + i/(i+1)
+        print(str(i) + "\t" + str("{0:.4f}".format(sum)))
+
+m_series(1,21)
