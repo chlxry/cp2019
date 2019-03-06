@@ -6,14 +6,10 @@
 # n n-1 ... 3 2 1
 
 
-n = 9
-j = n + 1
+n = int(input("enter 'n' here: "))
 
-for i in range (j):
-    while j > (j - i):
-        if j > (j - i):
-            print('{1:>{0}}'.format(j, i))
-            i = i - 1
-            j = j - 1
-        else:
-            break
+for row in range(n+1):
+    print(" "*(n - row), end="")
+    for col in range(row, 0, -1):
+        print(col, end="")
+    print()
