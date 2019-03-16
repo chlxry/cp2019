@@ -3,5 +3,4 @@
 # For example, count_letter("Welcome", 'e') returns 2.
 
 def count_letter(str, ch):
-    str = str
     print(str.count(ch))
