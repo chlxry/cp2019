@@ -9,3 +9,24 @@
 # 73  79  83  89  97  ...
 # ...
 
+def is_prime(n):
+    if n > 1:
+        for i in range(2, n):
+            if n % i == 0:
+                return False                
+        else:
+            return True
+          
+list = []
+n = 2
+rows = 0
+while rows < 100:
+    while len(list)<10:
+        if is_prime(n) is True:
+            list.append(n)
+            n = n + 1
+        else:
+            n = n + 1
+    print("{0:<5}".format(*list), "{1:<5}".format(*list), "{2:<5}".format(*list), "{3:<5}".format(*list), "{4:<5}".format(*list), "{5:<5}".format(*list), "{6:<5}".format(*list), "{7:<5}".format(*list), "{8:<5}".format(*list), "{9:<5}".format(*list), sep = " ")
+    rows = rows + 1
+    list = []
